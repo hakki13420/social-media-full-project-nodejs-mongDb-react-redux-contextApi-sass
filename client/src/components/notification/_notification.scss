@@ -1,0 +1,13 @@
+.notification{
+    position: fixed;
+    bottom: 10px;
+    width: 180px;
+    height: 30px;
+    right: -200px;
+    border-radius: 5px;
+    transition: 0.4s all ease;
+    z-index: 9999;
+    color: white;
+    background-color: $thirdColor;
+    @include dflex(row, center, center, unset);
+}

@@ -1,0 +1,10 @@
+.avatar-name{
+    @include dflex(row, unset, center, 1rem);
+    img{
+        @include circle(2rem, 2rem);
+    }
+    span{
+        font-size: 15px;
+        font-size: 600;
+    }
+}

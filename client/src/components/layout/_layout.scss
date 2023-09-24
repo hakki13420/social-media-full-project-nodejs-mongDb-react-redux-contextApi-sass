@@ -1,0 +1,14 @@
+.layout{
+    display: flex;
+
+    &-profile{
+        @include dflex(column, unset, unset, 2rem);
+        flex: 9;
+        .content{
+            flex: 9;
+            @include dflex(row, unset, unset, unset);
+
+        }
+    }
+}
+

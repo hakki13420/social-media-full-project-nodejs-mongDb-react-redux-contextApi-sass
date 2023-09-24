@@ -1,0 +1,66 @@
+.right-bar{
+    flex: 4;
+    padding: 2rem 1rem 2rem 0;
+    height: calc(100vh - 60px);
+    position: sticky;
+    top: 60px;
+    overflow-y: scroll;
+
+    &-birthDay{
+        @include dflex(row, unset, center, 1rem);
+        svg{
+            font-size: 6rem;
+            path{
+                fill:$secondColor;
+            }           
+        }
+    }
+    .publicity{
+        position: relative;
+        height: 280px;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,0, 0,0.3);
+            border-radius: 10px;
+            left: 0;
+        }
+        h1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 30px;
+            text-align: center;
+            margin: auto;
+            z-index: 998;
+            color: $fourthColor;
+            span{
+                color: white;
+                font-size: 15px;
+                text-decoration: underline;
+
+            }
+        }
+    }
+    .online-friends{
+        margin-top: 2rem;
+        h1{
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: 600;
+        }
+        &-list{
+            margin-top: 1rem;
+        }
+    }
+}

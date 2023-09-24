@@ -1,0 +1,49 @@
+.right-bar-profile{
+    flex: 4;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 860px);
+
+    .user-info{
+
+        &-item{
+            margin-bottom: 1rem;
+            @include dflex(row, unset, center, 10px);
+            h3{
+                font-weight: 600;
+            }
+            span{
+                color: #555;
+                font-weight: 300;
+            }
+        }
+    }
+    h4{
+        margin: 2rem 0;
+    }
+    .user-friends{
+        @include dflex(row, unset, unset, 1rem);
+        flex-wrap: wrap;
+        cursor: pointer;
+        &-item{
+            @include dflex(column, center, center, 8px);
+            margin-bottom: 1rem;
+            img{
+                width: 100px;
+                height: 80px;
+                border-radius: 5px;
+            }
+            .noAvatar{
+                width: 100px;
+                height: 80px;
+                border-radius: 5px;
+                border: 1px solid lightgray;
+                @include dflex(row, center, center, unset);
+            }
+            span{
+                color: #555;
+                font-weight: 300;
+            }
+        }
+    }
+}

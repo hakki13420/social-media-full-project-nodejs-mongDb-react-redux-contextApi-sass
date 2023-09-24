@@ -1,0 +1,11 @@
+
+POST http://127.0.0.1:3000/api/posts
+Content-Type: application/json
+cookies: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGZmNGRmOGQxODYxYzRjM2VmZDExMWEiLCJpYXQiOjE2OTUwNDEzMTF9.anGP8Y--DQiTaZ8mrLXSVcDsft5GYUF25Rkt2dqgmmE"}
+
+{
+    "title":"post 2",
+    "content":"the first content of posts",
+    "userId":"64ff4df8d1861c4c3efd111a",
+    "picture":"/posts/2.jpg"
+}

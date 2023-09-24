@@ -1,0 +1,101 @@
+{
+    "users":[
+        {
+            "id":0,
+            "username":"Jhon Doe",
+            "profileImage":"1.jpg"
+        },
+        {
+            "id":1,
+            "username":"Jhon Doe",
+            "profileImage":"/users/2.jpg"
+        },
+        {
+            "id":2,
+            "username":"James Bond",
+            "profileImage":"/users/3.jpg"
+        },
+        {
+            "id":3,
+            "username":"Bud Spencer",
+            "profileImage":"/users/4.jpg"
+        },
+        {
+            "id":4,
+            "username":"Harison Ford",
+            "profileImage":"/users/5.jpg"
+        }
+    ],
+    "posts":[
+        {
+            "id":1,
+            "content":"first post writen by thios user",
+            "picture":"http://picsum.photos/920",
+            "createdAt":"2 min ago",
+            "userId":1,
+            "likes":30,
+            "comments":12,
+            "shares":10
+        },
+        {
+            "id":2,
+            "content":"second post writen by thios user",
+            "picture":"http://picsum.photos/921",
+            "createdAt":"2 min ago",
+            "userId":1,
+            "likes":30,
+            "comments":12,
+            "shares":10
+        },
+        {
+            "id":3,
+            "content":"third post writen by thios user",
+            "picture":"http://picsum.photos/922",
+            "createdAt":"2 min ago",
+            "userId":1,
+            "likes":30,
+            "comments":12,
+            "shares":10
+        },
+        {
+            "id":4,
+            "content":"fourth post writen by thios user",
+            "picture":"http://picsum.photos/923",
+            "createdAt":"2 min ago",
+            "userId":1,
+            "likes":30,
+            "comments":12,
+            "shares":10
+        },
+        {
+            "id":5,
+            "content":"fifth post writen by thios user",
+            "picture":"http://picsum.photos/924",
+            "createdAt":"2 min ago",
+            "userId":2,
+            "likes":30,
+            "comments":12,
+            "shares":10
+        },
+        {
+            "id":6,
+            "content":"sixth post writen by thios user",
+            "picture":"http://picsum.photos/925",
+            "createdAt":"2 min ago",
+            "userId":3,
+            "likes":30,
+            "comments":12,
+            "shares":10
+        },
+        {
+            "id":7,
+            "content":"seventh post writen by thios user",
+            "picture":"http://picsum.photos/926",
+            "createdAt":"2 min ago",
+            "userId":4,
+            "likes":30,
+            "comments":12,
+            "shares":10
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+.register{
+    overflow-x: hidden;
+    position: relative;
+    
+    .register-container{
+        @include mobile{
+            @include dflex(column, center, center, 1rem);
+        }
+    }
+}

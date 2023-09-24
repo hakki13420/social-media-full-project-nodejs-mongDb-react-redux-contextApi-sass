@@ -1,0 +1,16 @@
+.topbar-item{
+
+
+    .container{
+        position: relative;
+        span{
+            position: absolute;
+            @include circle(1rem, 1rem);
+            background-color: red;
+            top: -5px;
+            left: 1rem;
+            font-size: 11px;
+            @include dflex(row, center, center, unset);
+        }
+    }
+}

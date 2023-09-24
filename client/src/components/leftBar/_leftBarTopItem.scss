@@ -1,0 +1,6 @@
+.left-bar-top-list-item{
+    @include dflex(row, unset, center, 1rem);
+    span{
+        font-weight: 500;
+    }
+}

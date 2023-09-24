@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #dddbdb
+}
+
+@import './mixins';
+@import './colors';
+@import './components/topbar/topBarItem';
+@import './components/avatar/avatar';
+@import './components/topbar/topBar';
+
+@import './components/layout/layout';
+@import './components/leftBar/leftBarTopItem';
+@import './components/leftBar/leftBarBottomItem';
+@import './components/leftBar/leftBar';
+@import './components/feed/feed';
+
+@import './components/rightBar/onlinefriend';
+@import './components/rightBar/rightBarProfile';
+@import './components/rightBar/rightBar';
+
+@import './components/profile/profileComp';
+
+
+
+@import './components/avatarName/avatarName';
+@import './components/share/share';
+@import './components/post/post';
+@import './components/posts/posts';
+
+
+@import './components/notification/notification';
+@import './pages/login/login';
+@import './pages/register/register';
+
+@import './components/comments/comments';
+@import './components/comment/comment';
+
+@import './components/search/searchItem';
+

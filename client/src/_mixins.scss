@@ -1,0 +1,40 @@
+
+@mixin dflex($dir, $jc, $ai, $gap){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+@mixin circle($w,$h){
+    width: $w;
+    height: $h;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@mixin boxShadow{
+    -webkit-box-shadow: 2px 3px 8px 1px #DEDEDE; 
+    box-shadow: 2px 3px 8px 1px #DEDEDE;
+}
+
+@mixin separator{
+    height: 0.5px;
+    background-color: rgb(185 185 179 / 20%);
+    border: none;
+}
+
+/* media queries*/
+
+@mixin mobile{
+    @media screen and (max-width:576px) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (max-width:992px) {
+        @content;
+    }
+}

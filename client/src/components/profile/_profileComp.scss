@@ -1,0 +1,57 @@
+.profile-comp{
+    flex: 9;
+    padding: 1rem;
+    &-top{
+        position: relative;
+        img{
+            &:first-child{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            &:last-child{
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;          
+                border: 4px solid white;      
+                top: calc(100% - 4rem);
+                @include circle(8rem, 8rem);
+            }            
+        }
+        .noavatar{
+            .avatar-image{
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto; 
+                background-color: lightgray;
+                border: 4px solid white;      
+                top: calc(100% - 4rem);
+                @include circle(8rem, 8rem);
+            }
+        }
+    }
+    &-bottom{
+        margin-top: 5rem;
+        @include dflex(column, center, center, 1rem);*
+        h1{
+            font-weight: 600;
+        }
+        span{
+            color: #555;
+            font-weight: 300;
+        }
+        button{
+            border-radius: 5px;
+            padding: 7px 35px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            color: $primaryColor;
+            background-color: $fourthColor;
+        }
+    }
+}

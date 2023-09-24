@@ -1,0 +1,37 @@
+.search-item{
+    padding: 1rem;
+    border-radius: 10px;
+    @include boxShadow;
+    margin-bottom: 1rem;
+    @include dflex(row, space-between, center, unset);
+    img{
+        width:150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .noImage{
+        @include dflex(row, center, center, unset);
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        width:150px;
+        height: 100px;
+    }
+    &-info{
+        @include dflex(column, center, unset, 10px);
+        span{
+            font-size: 13px;
+        }
+    }
+    button{
+        @include dflex(row, center, center, 10px);
+        padding: 7px 20px;
+        border-radius: 5px;
+        color: white;
+        background-color: $thirdColor;
+        border: none;
+        outline: none;
+        cursor: pointer;
+       
+    }
+}

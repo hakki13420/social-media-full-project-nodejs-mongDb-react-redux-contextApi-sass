@@ -1,0 +1,28 @@
+
+POST http://localhost:3000/api/users
+
+{
+    "username":"hakki",
+    "name":"hakki rabah",
+    "email":"hakki@gmail.com",
+    "password":"hakki"
+}
+
+####
+
+GET http://localhost:3000/api/users/645d5b9f1da2d37345455c5f
+
+###
+PUT http://localhost:3000/api/users/64ff4df8d1861c4c3efd111a
+Content-Type: application/json
+
+{
+    "city":"Spain",
+    "from":"Algeria",
+    "relationShip":2,
+    "id":"64ff4df8d1861c4c3efd111a"
+}
+
+
+###
+DELETE  http://localhost:3000/api/users/645d5b9f1da2d37345455c5f

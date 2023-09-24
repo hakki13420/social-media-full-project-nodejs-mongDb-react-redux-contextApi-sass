@@ -1,0 +1,25 @@
+.left-bar{
+    flex: 3;
+    padding: 1rem 2rem;
+    height: calc(100vh - 60px);
+    @include dflex(column, unset, unset, 2rem);
+    overflow-y: scroll;
+    position: sticky;
+    top: 60px;
+    &-top{
+        &-list{
+            @include dflex(column, unset, unset, 1rem);
+        }
+    }
+    hr{
+        @include separator;
+    }
+
+    &-bottom{
+        &-list{
+            @include dflex(column, unset, unset, 1rem);
+
+        }
+    }
+
+}

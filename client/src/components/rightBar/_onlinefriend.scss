@@ -1,0 +1,25 @@
+.online-friend-item{
+    @include dflex(row, unset, center, 1rem);
+    margin-bottom: 1rem;    
+    .online-friend-image{
+        position: relative;
+        @include circle(2rem, 2rem);
+        overflow:visible;
+        img{
+            @include circle(2rem, 2rem);
+        }
+        .online{
+            position: absolute;
+            top: 1px;
+            right: -5px;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            border: 2px solid white;
+            background-color: green;
+        }
+    }
+    span{
+        color: #555;
+    }
+}

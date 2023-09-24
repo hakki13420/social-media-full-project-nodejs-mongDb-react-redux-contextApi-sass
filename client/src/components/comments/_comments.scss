@@ -1,0 +1,35 @@
+.comments{
+    margin-top: 2rem;
+    &-top{
+        border-radius: 10px;
+        background-color: rgb(247, 245, 245);        padding: 1rem;
+        margin-bottom: 1rem;
+        @include boxShadow;
+        .write-comment{
+            @include dflex(row, unset, center, 1rem );
+        }
+        form{
+            @include dflex(row, unset, center, 1rem );
+            width: 100%;
+            input{
+                height: 40px;
+                background-color: transparent;
+                border: none;                
+                width: 85%;
+                outline: none;
+            }
+            button{
+                padding: 4px 10px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                background-color: $secondColor;
+                align-items: flex-end;
+                color: white;
+            }
+        }
+    }
+    &-bottom{
+
+    }
+}

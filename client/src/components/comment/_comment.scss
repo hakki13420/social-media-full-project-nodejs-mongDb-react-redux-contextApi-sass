@@ -1,0 +1,32 @@
+.comment{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(242, 240, 240);
+    @include boxShadow;
+    margin-bottom: 1rem;
+    &-top{
+      @include dflex(row, space-between, unset,10px);
+        .comment-body{
+            @include dflex(column, unset, unset, 1.5rem);
+            width:100%;
+            span{
+                font-size: 12px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }  
+  &-bottom{
+    @include dflex(row, space-between, center, unset);
+    margin-top: 1rem;
+    padding: 0 1rem;
+    svg{
+        font-size: 16px;
+    }
+    span{
+        font-size: 12px;
+    }
+  }
+}
